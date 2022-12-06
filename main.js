@@ -27,9 +27,9 @@ var render = Render.create({
     options: {
         width: 600,
         height: 800,
-        showAngleIndicator: true,
-        showCollisions: true,
-        showVelocity: true,
+        // showAngleIndicator: true,
+        // showCollisions: true,
+        // showVelocity: true,
         wireframes: false,
     }
 });
