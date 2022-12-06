@@ -64,9 +64,9 @@ setScore(0);
 
 // add all of the bodies to the world
 Composite.add(engine.world, [
-    Bodies.rectangle(400, 0, 800, 50, { isStatic: true }),//top
-    Bodies.rectangle(600, 300, 50, 660, { isStatic: true }),//right
-    Bodies.rectangle(0, 300, 50, 700, { isStatic: true }),//left
+    Bodies.rectangle(400, 0, 800, 50, { isStatic: true, render: {strokeStyle: '#ff0000'}}),//top
+    Bodies.rectangle(600, 300, 50, 660, { isStatic: true, render: {strokeStyle: '#ff0000'} }),//right
+    Bodies.rectangle(0, 300, 50, 700, { isStatic: true, render: {strokeStyle: '#ff0000'}     }),//left
     
     ball, santa,
     // Right Flipper
@@ -110,10 +110,10 @@ Composite.add(engine.world, [
     }),
 
     // obstacles
-    Bodies.rectangle(150, 300, 200, 10, {isStatic: true, angle: 30*Math.PI/180, restitution: 10.5}),
-    Bodies.rectangle(300, 100, 100, 10, {isStatic: true, angle: 30*Math.PI/180, restitution: 10.5}),
-    Bodies.rectangle(500, 200, 100, 10, {isStatic: true, angle: -30*Math.PI/180, restitution: 10.5}),
-    Bodies.rectangle(400, 400, 160, 10, {isStatic: true, angle: -30*Math.PI/180, restitution: 10.5}),
+    Bodies.rectangle(150, 300, 200, 10, {isStatic: true, angle: 30*Math.PI/180, restitution: 10.5, render: {strokeStyle: '#ff0000'}}),
+    Bodies.rectangle(300, 100, 100, 10, {isStatic: true, angle: 30*Math.PI/180, restitution: 10.5, render: {strokeStyle: '#ff0000'}}),
+    Bodies.rectangle(500, 200, 100, 10, {isStatic: true, angle: -30*Math.PI/180, restitution: 10.5, render: {strokeStyle: '#ff0000'}}),
+    Bodies.rectangle(400, 400, 160, 10, {isStatic: true, angle: -30*Math.PI/180, restitution: 10.5, render: {strokeStyle: '#ff0000'}}),
 ]);
 
 // run the renderer
